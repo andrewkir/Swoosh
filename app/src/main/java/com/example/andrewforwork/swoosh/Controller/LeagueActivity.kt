@@ -1,11 +1,12 @@
-package com.example.andrewforwork.swoosh
+package com.example.andrewforwork.swoosh.Controller
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.andrewforwork.swoosh.Utilities.EXTRA_LEAGUE
+import com.example.andrewforwork.swoosh.R
 import kotlinx.android.synthetic.main.activity_league.*
 
 class LeagueActivity : BaseActivity() {
@@ -41,7 +42,7 @@ class LeagueActivity : BaseActivity() {
     fun OnCoedClicked(view: View){
         womenLeague.isChecked=false
         menLeague.isChecked=false
-        SelectedLeague="coed"
+        SelectedLeague="co-ed"
     }
 
 }
